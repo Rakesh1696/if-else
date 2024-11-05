@@ -28,7 +28,8 @@ int main()
   
 
 //ask user for kilometer inputs
-  cout<<" Enter distance in kilonmeter car travelled: ";
+// changes - kilonmeter name to kilometer
+  cout<<" Enter distance in kilometer car travelled: ";
 //assign input as kilometer1
   cin>>kilometer1;
 
@@ -37,15 +38,16 @@ int main()
 //assign input as kilometer1
   cin>> kilometer2;
 
-
-  if (kilometer2<kilometer1)
+//changes - loop brackets added
+  if (kilometer2<kilometer1){
     cout<<"Enter number of kilometer travelled by car!!!: ";
     cin>>kilometer2;
-  else
+  } else {
     cin>>kilometer2;
-  
+  }
 //calculate distance travelled by car
-  distance=(kilometer2-kilometer1);
+  // changes - it should be 1-2 not 2-1
+  distance=(kilometer1-kilometer2);
 
 //output distance travelled by a car 
   cout<<" Distance travelled by a car: "<<distance<<endl;
